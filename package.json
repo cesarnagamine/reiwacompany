@@ -1,7 +1,7 @@
 {
   "name": "project",
   "version": "0.1.0",
-  "proxy": "https://reiwaco.herokuapp.com",
+  "proxy": "https://localhost:3001",
   "private": true,
   "main": "server.js",
   "dependencies": {
@@ -50,6 +50,9 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "build": "cd client/ && npm install && npm run build"
+  },
+  "engines": {
+    "node": "13.5.0"
   },
   "eslintConfig": {
     "extends": "react-app"
