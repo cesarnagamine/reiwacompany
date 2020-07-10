@@ -1,7 +1,6 @@
 {
   "name": "project",
   "version": "0.1.0",
-  "proxy": "https://localhost:3001",
   "private": true,
   "main": "server.js",
   "dependencies": {
@@ -48,6 +47,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "client": "npm start --prefix client",
+    "server": "nodemon server.js",
     "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "build": "cd client/ && npm install && npm run build"
   },
